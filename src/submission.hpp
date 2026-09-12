@@ -22,10 +22,10 @@ public:
   {}
 
   double& operator()(std::size_t i, std::size_t j){
-    return data_[i * rows_ + j];
+    return data_[i * cols_ + j];
   }
   double  operator()(std::size_t i, std::size_t j) const {
-    return data_[i * rows_ + j];
+    return data_[i * cols_ + j];
   }
 
   std::size_t rows() const { return rows_; }
